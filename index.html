@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Navam Broadband – Blazing fast internet coming soon to your region. Check service availability and explore our plans." />
+  <title>Navam Broadband – Coming Soon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="/navambroadband/img/navam_logo.png" alt="Navam Broadband Logo" width="200px" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <!-- <li><a href="#pricing">Plans</a></li> -->
+        <li><a href="#enquiry">Availability</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / BANNER – COMING SOON ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-anim">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span> Something Big is Coming
+      </div>
+
+      <!-- <div class="hero-logo-wrap">
+        <img src="/img/navam_logo.png" alt="Navam Broadband Logo" width="200px" />
+      </div> -->
+
+      <h1 class="hero-title">
+        Lightning-Fast Internet<br />
+        <span class="gradient-text">Launching Very Soon</span>
+      </h1>
+      <p class="hero-sub">
+        Get ready for ultra-reliable broadband that connects your world.<br />
+        High-speed fiber internet is coming to your neighbourhood!
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-wrap">
+        <div class="count-block">
+          <span class="count-num" id="days">00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num" id="hours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num" id="minutes">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <span class="count-sep">:</span>
+        <div class="count-block">
+          <span class="count-num" id="seconds">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Notify Form -->
+      <div class="notify-form">
+        <input type="email" id="notifyEmail" placeholder="Enter your email to get notified" />
+        <button type="button" onclick="notifyMe()">Notify Me</button>
+      </div>
+      <p class="notify-msg" id="notifyMsg"></p>
+
+      <!-- <div class="scroll-hint">
+        <i class="fas fa-chevron-down"></i>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>Built for the <span class="text-red">Modern</span> World</h2>
+        <p>Experience the internet the way it was meant to be — fast, stable, and always on.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Ultra-Fast Speed</h3>
+          <p>Enjoy speeds up to 1 Gbps with our high-performance fiber optic network infrastructure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Secure Connection</h3>
+          <p>Your data is protected with enterprise-grade security and end-to-end encryption.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is available round the clock to resolve your issues fast.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-signal"></i></div>
+          <h3>99.9% Uptime</h3>
+          <p>We guarantee near-perfect uptime so your business and home stay always connected.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-wifi"></i></div>
+          <h3>Unlimited Data</h3>
+          <p>Stream, game, and work without worrying about data caps on all our plans.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon"><i class="fas fa-indian-rupee-sign"></i></div>
+          <h3>Affordable Plans</h3>
+          <p>Flexible pricing plans for every need — from home users to large enterprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <!-- <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Our Plans</span>
+        <h2>Choose Your <span class="text-red">Perfect Plan</span></h2>
+        <p>Simple, transparent pricing with no hidden fees. All plans include unlimited data.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        
+        <div class="price-card">
+          <div class="popular-badge">Combo</div>
+          <div class="price-top">
+            <div class="plan-icon"><i class="fas fa-house-signal"></i></div>
+            <h3 class="plan-name">Basic</h3>
+            <p class="plan-desc">Perfect for light home users</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">₹</span>
+            <span class="amount">499</span>
+            <span class="period">30 days</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 30 Mbps Speed</li>
+            <li><i class="fas fa-check"></i> 1000gb Data</li>
+            <li><i class="fas fa-check"></i>Digital + Internet</li>
+            <li><i class="fas fa-check"></i> Email Support</li>
+            <li class="disabled"><i class="fas fa-times"></i> Static IP</li>
+            <li class="disabled"><i class="fas fa-times"></i> OTT Streaming</li>
+          </ul>
+          <a href="#enquiry" class="plan-btn">Check Availability</a>
+        </div>
+
+        
+        <div class="price-card">
+          <div class="price-top">
+            <div class="plan-icon"><i class="fas fa-users"></i></div>
+            <h3 class="plan-name">Standard</h3>
+            <p class="plan-desc">Great for families & students</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">₹</span>
+            <span class="amount">399</span>
+            <span class="period">30 days</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 50 mbps Speed</li>
+            <li><i class="fas fa-check"></i> 4000gb Data</li>
+            <li><i class="fas fa-check"></i> Up to 4 Devices</li>
+            <li><i class="fas fa-check"></i> 24/7 Phone Support</li>
+            <li><i class="fas fa-check"></i> Static IP</li>
+            <li class="disabled"><i class="fas fa-times"></i> OTT Streaming</li>
+          </ul>
+          <a href="#enquiry" class="plan-btn">Check Availability</a>
+        </div>
+
+        
+        <div class="price-card popular">
+          <div class="popular-badge">⭐ Most Popular</div>
+          <div class="price-top">
+            <div class="plan-icon"><i class="fas fa-rocket"></i></div>
+            <h3 class="plan-name">Premium</h3>
+            <p class="plan-desc">Best for power users & WFH</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">₹</span>
+            <span class="amount">1499</span>
+            <span class="period">100 days</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 100 Mbps Speed</li>
+            <li><i class="fas fa-check"></i> 1499gb Data</li>
+            <li><i class="fas fa-check"></i> Up to 8 Devices</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+            <li><i class="fas fa-check"></i> Static IP</li>
+            <li><i class="fas fa-check"></i> OTT Included (Netflix/Prime)</li>
+          </ul>
+          <a href="#enquiry" class="plan-btn popular-btn">Check Availability</a>
+        </div>
+
+        
+        <div class="price-card">
+          <div class="price-top">
+            <div class="plan-icon"><i class="fas fa-building"></i></div>
+            <h3 class="plan-name">Ultra</h3>
+            <p class="plan-desc">Ideal for offices & businesses</p>
+          </div>
+          <div class="price-amount">
+            <span class="currency">₹</span>
+            <span class="amount">599</span>
+            <span class="period">30 days</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 125 mbps Speed</li>
+            <li><i class="fas fa-check"></i> 4000gb Data</li>
+            <li><i class="fas fa-check"></i> Unlimited Devices</li>
+            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+            <li><i class="fas fa-check"></i> Static IP + VPN</li>
+            <li><i class="fas fa-check"></i> All OTT Platforms</li>
+          </ul>
+          <a href="#enquiry" class="plan-btn">Check Availability</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note">* Prices are introductory launch offers. GST applicable. Installation charges may vary by
+        region.</p>
+    </div>
+  </section> -->
+
+  <!-- ===== SERVICE AVAILABILITY ENQUIRY ===== -->
+  <section class="enquiry" id="enquiry">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Check Availability</span>
+        <h2>Is Navam Available in <span class="text-blue">Your Area?</span></h2>
+        <p>Fill in your details below — our team will confirm availability and get back to you within 24 hours.</p>
+      </div>
+
+      <div class="enquiry-wrapper">
+        <div class="enquiry-info">
+          <h3>Why Register Now?</h3>
+          <ul class="enq-perks">
+            <li><i class="fas fa-gift"></i>
+              <div><strong>Early Bird Offer</strong><span>Get up to 2 months free on annual plans</span></div>
+            </li>
+            <li><i class="fas fa-truck-fast"></i>
+              <div><strong>Priority Installation</strong><span>Be first in your area when we launch</span></div>
+            </li>
+            <li><i class="fas fa-tag"></i>
+              <div><strong>Launch Discounts</strong><span>Exclusive pricing for pre-registered customers</span></div>
+            </li>
+            <li><i class="fas fa-phone-volume"></i>
+              <div><strong>Dedicated Callback</strong><span>Our team calls you within 24 hours</span></div>
+            </li>
+          </ul>
+
+          <div class="contact-mini">
+            <p><i class="fas fa-phone"></i> <a href="tel:+919999999999">+91 99999 99999</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:navambroadband@gmail.com">navambroadband@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="enquiry-form-wrap">
+          <form class="enquiry-form" id="enquiryForm" onsubmit="submitEnquiry(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9]{10}" maxlength="10"
+                  required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="state">State *</label>
+                <select id="state" required>
+                  <option value="">-- Select State --</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                  <option>Chhattisgarh</option>
+                  <option>Goa</option>
+                  <option>Gujarat</option>
+                  <option>Haryana</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>Madhya Pradesh</option>
+                  <option>Maharashtra</option>
+                  <option>Manipur</option>
+                  <option>Meghalaya</option>
+                  <option>Mizoram</option>
+                  <option>Nagaland</option>
+                  <option>Odisha</option>
+                  <option>Punjab</option>
+                  <option>Rajasthan</option>
+                  <option>Sikkim</option>
+                  <option>Tamil Nadu</option>
+                  <option>Telangana</option>
+                  <option>Tripura</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Uttarakhand</option>
+                  <option>West Bengal</option>
+                  <option>Andaman and Nicobar Islands</option>
+                  <option>Chandigarh</option>
+                  <option>Dadra and Nagar Haveli</option>
+                  <option>Daman and Diu</option>
+                  <option>Delhi</option>
+                  <option>Jammu and Kashmir</option>
+                  <option>Ladakh</option>
+                  <option>Lakshadweep</option>
+                  <option>Puducherry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="district">District / City *</label>
+                <input type="text" id="district" placeholder="Your district or city" required />
+              </div>
+              <div class="form-group">
+                <label for="pincode">PIN Code *</label>
+                <input type="text" id="pincode" placeholder="6-digit PIN code" maxlength="6" pattern="[0-9]{6}"
+                  required />
+              </div>
+            </div>
+
+            <!-- <div class="form-group full">
+              <label for="planInterest">Interested Plan</label>
+              <select id="planInterest">
+                <option value="">-- Select a Plan (Optional) --</option>
+                <option>Basic – ₹499</option>
+                <option>Standard – ₹399</option>
+                <option>Premium – ₹1,499</option>
+                <option>Ultra – ₹599</option>
+              </select>
+            </div> -->
+
+            <div class="form-group full">
+              <label for="message">Additional Message</label>
+              <textarea id="message" rows="3" placeholder="Any specific requirements or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Submit Enquiry
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon"><i class="fas fa-circle-check"></i></div>
+            <h3>Enquiry Submitted!</h3>
+            <p>Thank you! Our team will check availability in your area and call you back within <strong>24
+                hours</strong>.</p>
+            <button onclick="resetForm()">Submit Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/navambroadband/img/navam_logo.png" alt="logo" width="200px" />
+            <p>Connecting India with reliable, high-speed broadband. Empowering homes and businesses with seamless
+              internet.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <!-- <li><a href="about.html">About Us</a></li> -->
+              <li><a href="#features">Features</a></li>
+              <!-- <li><a href="#pricing">Plans & Pricing</a></li> -->
+              <li><a href="#enquiry">Check Availability</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <!-- <h4>Plans</h4> -->
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <!-- <li><a href="#pricing">Basic – ₹499</a></li>
+              <li><a href="#pricing">Standard – ₹399</a></li>
+              <li><a href="#pricing">Premium – ₹1,499</a></li>
+              <li><a href="#pricing">Ultra – ₹599</a></li> -->
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+              <li><i class="fas fa-phone"></i> +91 99999 99999</li>
+              <li><i class="fas fa-envelope"></i>navambroadband@gmail.com</li>
+              <li><i class="fas fa-location-dot"></i> India</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Navam Broadband. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Navbar scroll effect ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ── Hamburger menu ──
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('active');
+    });
+
+    // ── Close menu on link click ──
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('hamburger').classList.remove('active');
+      });
+    });
+
+    // ── Countdown Timer – set launch date here ──
+    const launchDate = new Date('2026-12-01T00:00:00').getTime();
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = launchDate - now;
+      if (diff <= 0) {
+        document.querySelector('.countdown-wrap').innerHTML = '<p class="launched-text">🎉 We are Live!</p>';
+        return;
+      }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('days').textContent = String(d).padStart(2, '0');
+      document.getElementById('hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── Notify Me ──
+    function notifyMe() {
+      const email = document.getElementById('notifyEmail').value.trim();
+      const msg = document.getElementById('notifyMsg');
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        msg.textContent = '⚠️ Please enter a valid email address.';
+        msg.style.color = '#ffb3b3';
+        return;
+      }
+      msg.textContent = '✅ You\'re on the list! We\'ll notify you at launch.';
+      msg.style.color = '#a8ffb8';
+      document.getElementById('notifyEmail').value = '';
+    }
+
+    // ── Enquiry Form Submit ──
+    function submitEnquiry(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting…';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('enquiryForm').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'flex';
+      }, 1500);
+    }
+
+    function resetForm() {
+      document.getElementById('enquiryForm').reset();
+      document.getElementById('enquiryForm').style.display = 'grid';
+      document.getElementById('formSuccess').style.display = 'none';
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Enquiry';
+      btn.disabled = false;
+    }
+
+    // ── Scroll reveal animation ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.feature-card, .price-card, .enquiry-wrapper, .section-header').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>
